@@ -5,15 +5,10 @@ using UnityEngine;
 public class TPSMovement : MonoBehaviour
 {
     public CharacterController controller;
-    Vector3 movedirection;
 
     public float speed = 5f;
 
     public float turnSmoothTime = 0.1f;
-
-    public float gravity = -20f;
-
-    public float jumpspeed = 6f;
 
     public Transform cam; 
 
@@ -40,15 +35,6 @@ public class TPSMovement : MonoBehaviour
 
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-
-        if(Input.GetButtonDown("Jump"))
-        {
-            movedirection.y = jumpspeed;
-        }
-
-        // ADD GRAVITY 
-        movedirection.y += gravity * Time.deltaTime;
-        controller.Move(movedirection * Time.deltaTime);
 
 
         
