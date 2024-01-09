@@ -11,9 +11,9 @@ public class TPSMovement : MonoBehaviour
 
     public Animator animator;
 
-    public float speed = 5f;
+    public float speed = 2f;
 
-    public float runspeed = 10f;
+    public float runspeed = 5f;
 
     public float jumpforce = 10f;
 
@@ -56,6 +56,7 @@ void Update()
         {
             movedirection = transform.forward * speed * vertical;
             movedirection = transform.forward * speed * horizontal;
+
         }
         // CODE POUR SAUTER 
         if (Input.GetButtonDown("Jump"))
@@ -76,23 +77,23 @@ void Update()
             Debug.Log("Sprint enable");
         }
     }
-
     // Quand la touche "Sprint" est relâcher 
     void FixedUpdate()
     {
-  
+        animator.SetFloat("Walk", movedirection.magnitude);
         
-            animator.SetFloat("Walk", movedirection.magnitude);
-        
-
         if (Input.GetButtonUp("Sprint"))
         {
             animator.SetBool("Sprint", false);
             Debug.Log("Sprint unable");
-
         }
-
     }
+
+
+
+  
+        
+
 
     
  
