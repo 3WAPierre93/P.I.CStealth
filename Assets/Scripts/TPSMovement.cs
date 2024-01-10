@@ -30,9 +30,18 @@ public class TPSMovement : MonoBehaviour
     private bool Sprint;
     #endregion
 
-#region Script déplacements
-// Update is called once per frame// \\ Script pour le déplacement et les mouvements et suivis de caméra\\
-void Update()
+    #region Script déplacements
+
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        Debug.Log(animator);
+    }
+
+        
+    // Update is called once per frame// \\ Script pour le déplacement et les mouvements et suivis de caméra\\
+    void Update()
     {
 
         float horizontal = Input.GetAxisRaw("Horizontal");
