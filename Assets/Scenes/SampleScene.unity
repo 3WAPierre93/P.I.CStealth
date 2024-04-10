@@ -3286,7 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 672793009}
-  animator: {fileID: 0}
+  animator: {fileID: 672793013}
   speed: 5
   runspeed: 7
   jumpforce: 10
@@ -3372,7 +3372,13 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+    'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform 'mixamorig:RightFoot'\n\tTransform
+    'mixamorig:Head'\n\tTransform 'mixamorig:LeftUpLeg'\n\tand more ...\n\tFrom animation
+    clip 'Jumping'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -18481,7 +18487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474065807}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26364714, y: 0.15075827, z: -0.041757606, w: 0.95185006}
+  m_LocalRotation: {x: 0.2636471, y: 0.15075827, z: -0.04175761, w: 0.95185006}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18861,15 +18867,15 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 2407d259d12f89e4a94ae0fe432bc3c8, type: 2}
     - target: {fileID: -8679921383154817045, guid: 30851956bd271684888c0e260058543e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30851956bd271684888c0e260058543e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8
+      value: -1.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30851956bd271684888c0e260058543e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30851956bd271684888c0e260058543e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20128,7 +20134,7 @@ Transform:
   m_GameObject: {fileID: 1828694750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.22, y: 2.29, z: -29.2}
+  m_LocalPosition: {x: 23.22, y: 2.42, z: -29.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
